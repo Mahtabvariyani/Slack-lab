@@ -1,0 +1,232 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: #62085c;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+  }
+  
+  nav img {
+    max-height: 40px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+  }
+  
+  nav ul[hidden] {
+    display: none;
+    position: absolute;
+    background-color: #7b0c61;
+    list-style: none;
+    padding: 10px;
+  }
+  
+  nav ul[hidden] li {
+    margin-bottom: 10px;
+  }
+  
+  nav ul[hidden] a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    nav ul {
+      display: none;
+    }
+  
+    nav button {
+      display: block;
+    }
+  
+    nav ul[hidden] {
+      display: block;
+    }
+  }
+
+  /* Styling for the header section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #62085c;
+    height: 90vh;
+  }
+  
+  header div:nth-child(1) {
+    flex: 1;
+  }
+  
+  header h1 {
+    color: #fff;
+    font-size: 42px;
+    margin-bottom: 15px;
+  }
+  
+  header p {
+    font-size: 18px;
+    color: #f6f6f6;
+    margin-bottom: 25px;
+  }
+  
+  header button {
+    background-color: #ffff;
+    color: #211e1e;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+  
+  header button:last-child {
+    background-color: #4285f4;
+  }
+  
+  header button:last-child img {
+    max-height: 20px;
+    margin-right: 10px;
+  }
+  
+  header button:last-child span {
+    vertical-align: middle;
+  }
+  
+  header div:nth-child(2) {
+    flex: 1;
+    text-align: center;
+  }
+  
+  header img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+main {
+    padding: 40px 20px;
+  }
+  
+ 
+  main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  
+  main section div:nth-child(1) {
+    flex: 1;
+  }
+  
+  main section div:nth-child(2) {
+    flex: 1;
+    padding: 0 40px;
+  }
+  
+  main section p {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  
+  main section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  main section a {
+    text-decoration: none;
+    color: #4285f4;
+  }
+  
+  main section a span {
+    border-bottom: 1px solid #4285f4;
+  }
+  
+  main section button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+  
+  main section ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  main section ul li {
+    text-align: center;
+  }
+  
+  main section ul li span {
+    font-size: 36px;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  main section ul li p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  main section:last-child {
+    text-align: center;
+  }
+  
+  main section h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    main section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    main section div:nth-child(2) {
+      padding: 0;
+    }
+  
+    main section button {
+      margin: 10px auto;
+    }
+  }
+  
